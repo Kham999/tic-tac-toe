@@ -1,0 +1,162 @@
+html{
+    height:100%;
+    
+}
+body{
+    margin:0;
+    background: linear-gradient(180deg, #eeaeca,#b5dbd0, #94bbe9);
+}
+
+.container{
+display:flex;
+justify-content: center;
+align-items: center;
+margin:auto;
+}
+
+
+.area{
+    width:460px;
+    height:460px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:5px;
+
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+  text-shadow: 0 0 7px #fff;
+  font-family: 'Gideon Roman', cursive;
+  font-size:50px;
+  margin-bottom:5%;
+}
+
+
+.box{
+    font-family: 'Gideon Roman', cursive;
+    width:150px;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing:border-box;
+    color: #fff;
+  text-shadow: 0 0 7px #fff;
+    cursor: pointer;
+    font-size: 60px;
+    border-radius:15%;
+    background-color:rgba(255,255,255,0.2);
+}
+
+.box:hover{
+    background-color:rgba(255,255,255,0.5);
+}
+
+.result-show {
+    display: block;
+    animation: showContainer .5s linear forwards;
+  }
+  
+  @keyframes showContainer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
+.result-container{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+}
+
+.overlay{
+    margin: 15% auto; 
+    padding: 0px;
+    border-radius:10px;
+    width: 400px;
+    height:300px;
+    font-size:17px;
+    text-align:center;
+    background-color:#b5dbd0;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+}
+
+
+.img-over{
+    width:20%;
+    height:20%;
+    opacity: .7;
+}
+
+.img-container{
+    margin:0;
+}
+
+.text{
+    font-family: 'Gideon Roman', cursive;
+  font-size:30px;
+  color:#fff;
+  text-shadow: 0 0 2px #fff;
+}
+
+.button{
+    width:100px;
+    height:40px;
+    border:0;
+    background-color: #cfddec;
+    cursor:pointer;
+    box-shadow: 0 0 5px rgb(104, 98, 98);
+    font-family: 'Gideon Roman', cursive;
+    font-size:15px;
+    color: rgb(41, 24, 24);
+}
+
+.button:hover {
+    background-color:#83abda;
+   box-shadow:0 0 4px #fff;
+   color:#fff;
+   text-shadow:0 0 4px #fff;
+ }
+
+ .footer{
+    padding:20px;
+    position: absolute;
+    bottom: 0;
+    right:20px;
+    display:flex;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    color: black;
+    gap:20px;
+    
+}
+
+.github {
+    color:black;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.school{
+    width:110px;
+    height:45px;
+    background-image: url(rs_school_js.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
